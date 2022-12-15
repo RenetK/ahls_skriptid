@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+#
+#
+read arv1
+arv1=$((arv1+1))
+summa=0
+for (( arv=1; arv<$arv1; arv++))
+do 
+	jaak=$(($arv % 2))
+	if [ $jaak -eq 0 ]; then
+		summa=$(($summa + $arv))
+		echo $summa
+	fi
+done
+echo "Arvude vahemikus 1 kuni 10 (kaasaarvatud) paarisarvude summa on: $summa"
+# skripti lopp
